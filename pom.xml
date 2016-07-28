@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.gwidgets.maven</groupId>
+	<artifactId>gwt-archetypes</artifactId>
+	<version>0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>gwt-archetypes</name>
+	<description>A set of maven archetypes for getting started with GWT apps</description>
+
+	<licenses>
+		<license>
+			<name>Apache 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Zakaria Amine</name>
+			<email>zakaria.amine88@gmail.com</email>
+		</developer>
+	</developers>
+
+	<modules>
+		<module>gwt-polymer-starter</module>
+	</modules>
+	<organization>
+		<name>G-Widgets</name>
+		<url>www.g-widgets.com</url>
+	</organization>
+	<scm>
+		<connection>scm:git:git@github.com:gwidgets/gwt-archetypes.git</connection>
+		<developerConnection>scm:git:git@github.com:zak905/gwt-archetypes.git</developerConnection>
+		<url>https://github.com/gwidgets/gwt-archetypes.git</url>
+	</scm>
+
+	<profiles>
+		<profile>
+			<id>release</id>
+		</profile>
+	</profiles>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
+
+	<url>https://github.com/gwidgets/gwt-archetypes</url>
+</project>
