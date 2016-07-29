@@ -7,7 +7,9 @@ This project provides a set of archetypes for starting your GWT application. All
 
 The available archetypes are:
 
-  - gwt-polymer-starter: A polymer based UI inspired from the [Polymer Starter Kit](https://developers.google.com/web/tools/polymer-starter-kit/). This archetype uses Vaadin's [gwt-polymer-elements](https://github.com/vaadin/gwt-polymer-elements). It also uses GWT Activities and Places to handle routing and section change.This archetype generates the client side only.   
+  - gwt-polymer-starter: A polymer based UI inspired from the [Polymer Starter Kit](https://developers.google.com/web/tools/polymer-starter-kit/). This archetype uses Vaadin's [gwt-polymer-elements](https://github.com/vaadin/gwt-polymer-elements). It also uses GWT Activities and Places to handle routing and section change.This archetype generates the client side only.
+  
+   - gwt-polymer-starter-dagger-di: The same archertype as the gwt-polymer-starter. The difference between the two is that this archetype introduces dependency injection using [Dagger](https://github.com/google/dagger). This plugin also makes of the build-helper-maven-plugin [http://www.mojohaus.org/build-helper-maven-plugin/usage.html] for adding the dagger compilation classes.  
 
 ##Usage
 

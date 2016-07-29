@@ -24,6 +24,7 @@
 
 	<modules>
 		<module>gwt-polymer-starter</module>
+		<module>gwt-polymer-starter-dagger-di</module>
 	</modules>
 	<organization>
 		<name>G-Widgets</name>
