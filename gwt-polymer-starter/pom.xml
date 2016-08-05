@@ -9,7 +9,6 @@
 	</parent>
 
 	<artifactId>gwt-polymer-starter</artifactId>
-	<packaging>maven-archetype</packaging>
   <description>Polymer starter kit layout based on gwt-vaadin-polymer-elements.</description>
   
 

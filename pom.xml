@@ -25,6 +25,7 @@
 	<modules>
 		<module>gwt-polymer-starter</module>
 		<module>gwt-polymer-starter-dagger-di</module>
+		<module>gwt-polymer-nav-list-detail</module>
 	</modules>
 	<organization>
 		<name>G-Widgets</name>
