@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/gwidgets/gwt-archetypes.svg?branch=master)](https://travis-ci.org/gwidgets/gwt-archetypes)
 ## Description
 
 This project provides a set of archetypes for starting your GWT application. All archetypes make use of [Maven GWT Plugin](https://github.com/gwt-maven-plugin/gwt-maven-plugin) as a build tool.  
