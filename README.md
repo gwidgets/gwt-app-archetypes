@@ -19,6 +19,7 @@ The available archetypes are:
 On Windows:
 
     mvn archetype:generate -DarchetypeGroupId=com.gwidgets.maven                ^
+      -DarchetypeCatalog=https://oss.sonatype.org/content/repositories/snapshots/ ^
       -DarchetypeArtifactId={artifactName}          ^
       -DarchetypeVersion=0.1-SNAPSHOT                ^
       -DgroupId={yourGroupId}                               ^
@@ -29,6 +30,7 @@ On Windows:
 On Linux/Mac Os: 
 
         mvn archetype:generate -DarchetypeGroupId=com.gwidgets.maven                \
+      -DarchetypeCatalog=https://oss.sonatype.org/content/repositories/snapshots/ \
       -DarchetypeArtifactId={artifactName}          \
       -DarchetypeVersion=0.1-SNAPSHOT                \
       -DgroupId={yourGroupId}                                \

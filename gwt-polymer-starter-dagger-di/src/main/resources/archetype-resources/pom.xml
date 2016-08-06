@@ -61,31 +61,28 @@
 			<version>${gwtPolymerVersion}</version>
 			<scope>provided</scope>
 		</dependency>
-				<dependency>
+		<dependency>
 			<groupId>javax.inject</groupId>
 			<artifactId>javax.inject</artifactId>
 			<version>1</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.google.dagger</groupId>
 			<artifactId>dagger-gwt</artifactId>
 			<version>2.5</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.google.dagger</groupId>
 			<artifactId>dagger-compiler</artifactId>
 			<version>2.5</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 
 	<build>
-		<!-- Output classes directly into the webapp, so that IDEs and "mvn process-classes" 
-			update them in DevMode -->
-		<outputDirectory>${project.build.directory}/${project.build.finalName}/WEB-INF/classes</outputDirectory>
-
 		<plugins>
-
-			<!-- Mojo's Maven Plugin for GWT -->
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>gwt-maven-plugin</artifactId>
@@ -98,8 +95,6 @@
 						</goals>
 					</execution>
 				</executions>
-				<!-- Plugin configuration. There are many available options, see gwt-maven-plugin 
-					documentation at codehaus.org -->
 				<configuration>
 					<runTarget>${module}.html</runTarget>
 					<modules>
@@ -127,29 +122,11 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.3.2</version>
+				<version>3.5.1</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
 				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>build-helper-maven-plugin</artifactId>
-				<version>1.12</version>
-				<executions>
-					<execution>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>add-source</goal>
-						</goals>
-						<configuration>
-							<sources>
-								<source>${project.build.directory}/generated-sources/annotations</source>
-							</sources>
-						</configuration>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>

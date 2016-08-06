@@ -24,35 +24,5 @@
         <include>**/*.css</include>
       </includes>
     </fileSet>
-    <fileSet filtered="true" encoding="UTF-8">
-      <directory>.settings</directory>
-      <includes>
-        <include>**/*.xml</include>
-      </includes>
-    </fileSet>
-    <fileSet encoding="UTF-8">
-      <directory>.settings</directory>
-      <includes>
-        <include>**/*.prefs</include>
-        <include>**/*.component</include>
-        <include>**/*.container</include>
-        <include>**/*.name</include>
-        <include>**/*.jsdtscope</include>
-      </includes>
-    </fileSet>
-    <fileSet filtered="true" encoding="UTF-8">
-      <directory></directory>
-      <includes>
-        <include>.classpath</include>
-        <include>.project</include>
-        <include>*.launch</include>
-      </includes>
-    </fileSet>
-    <fileSet packaged="true" encoding="UTF-8">
-      <directory>target/generated-sources/gwt</directory>
-      <includes>
-        <include>**/*</include>
-      </includes>
-    </fileSet>
   </fileSets>
 </archetype-descriptor>

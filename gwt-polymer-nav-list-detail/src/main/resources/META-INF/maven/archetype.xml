@@ -17,7 +17,6 @@
 	</sources>
 	<resources>
 		<resource>src\main\resources\__module__.gwt.xml</resource>
-		<resource>src\main\webapp\__module__.css</resource>
 		<resource>src\main\webapp\__module__.html</resource>
 		<resource>src\main\webapp\WEB-INF\web.xml</resource>
 		<resource>src\main\webapp\styles\app-theme.html</resource>
