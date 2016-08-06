@@ -36,3 +36,8 @@ On Linux/Mac Os:
       -Dmodule={moduleName}                                   \
       -Dversion={yourVersion}
 
+
+##Demos:
+
+- gwt-polymer-starter: [https://gwt-polymer-starter.herokuapp.com/](https://gwt-polymer-starter.herokuapp.com/)
+- gwt-polymer-nav-list-detail: [https://gwt-polymer-nav-list.herokuapp.com](https://gwt-polymer-nav-list.herokuapp.com)
