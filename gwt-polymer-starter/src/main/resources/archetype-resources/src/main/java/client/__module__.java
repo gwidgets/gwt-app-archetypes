@@ -21,55 +21,6 @@ public class ${module} implements EntryPoint {
 	private SimplePanel appWidget = new SimplePanel();
 	
   public void onModuleLoad() {
-	  
-/************************** Uncomment this if deploying to a server (Production)
-	  
-	  Polymer.importHref(Arrays.asList(
-			  "iron-flex-layout",
-			  "iron-icons",
-			  "iron-pages",
-			  "iron-selector",
-			  "paper-drawer-panel",
-			  "paper-icon-button",
-			  "paper-button",
-			  "paper-item",
-			  "paper-material",
-			  "paper-menu",
-			  "paper-scroll-header-panel",
-			  "paper-styles/typography.html",
-			  "paper-toast",
-			  "paper-toolbar",
-			  "paper-card"
-		));   
-
-
-
-				Polymer.whenReady(new Function() {
-				   public Object call(Object arg) {
-					   ClientFactory clientFactory = GWT.create(ClientFactory.class);
-	             		PlaceController controller = clientFactory.getPlaceController();
-	             		
-	             		EventBus bus = clientFactory.getEventBus();
-	                    ActivityMapper activityMapper = new MyActivityMapper(clientFactory);
-				        ActivityManager activityManager = new ActivityManager(activityMapper, bus);
-				        activityManager.setDisplay(appWidget);
-
-				        MyHistoryMapper historyMapper= GWT.create(MyHistoryMapper.class);
-				        final PlaceHistoryHandler historyHandler = new PlaceHistoryHandler(historyMapper);
-				        historyHandler.register(controller, bus, homePlace);
-				        
-				        clientFactory.getMainPageView().initializeEvents(controller);
-				        RootPanel.get().add(appWidget);
-				       
-				        historyHandler.handleCurrentHistory();
-				      return null;
-				  }
-				});
-	  
-	                   ***************************************************************************/
-	  
-	  /************************Use this if working with Super Dev Mode *******************************/
-
 	                    		 
 	                    ClientFactory clientFactory = GWT.create(ClientFactory.class);
 	             		PlaceController controller = clientFactory.getPlaceController();
@@ -87,9 +38,6 @@ public class ${module} implements EntryPoint {
 				        RootPanel.get().add(appWidget);
 				       
 				        historyHandler.handleCurrentHistory();
-				        
-				        
-		 /************************************************************************************************/
-				        
+				        				        
   }
 }
