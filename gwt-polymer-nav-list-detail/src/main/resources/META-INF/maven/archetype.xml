@@ -13,7 +13,7 @@
 		<source>src\main\java\activities\MainPageActivity.java</source>
 		<source>src\main\java\ui\MainPage.java</source>
 		<source>src\main\java\ui\MainPage.ui.xml</source>
-		<source>src\main\java\ui\SubMenuLinks</source>
+		<source>src\main\java\ui\SubMenuLinks.java</source>
 	</sources>
 	<resources>
 		<resource>src\main\resources\__module__.gwt.xml</resource>
@@ -22,6 +22,6 @@
 		<resource>src\main\webapp\styles\app-theme.html</resource>
 		<resource>src\main\webapp\styles\main.css</resource>
 		<resource>src\main\webapp\styles\shared-styles.html</resource>
-		<resource>src\main\webapp\dev-imports.html</resource>
+		<resource>src\main\webapp\polymer-imports.html</resource>
 	</resources>
 </archetype>

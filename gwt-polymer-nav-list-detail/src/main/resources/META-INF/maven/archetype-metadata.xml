@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><archetype-descriptor name="GWT Polymer Starter Archetype">
+<?xml version="1.0" encoding="UTF-8"?><archetype-descriptor name="GWT Polymer Nav List Detail Archetype">
   <requiredProperties>
     <requiredProperty key="module" />
   </requiredProperties>

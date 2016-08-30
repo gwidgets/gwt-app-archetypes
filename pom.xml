@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.gwidgets.maven</groupId>
 	<artifactId>gwt-archetypes</artifactId>
-	<version>0.1-SNAPSHOT</version>
+	<version>0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>gwt-archetypes</name>
 	<description>A set of maven archetypes for getting started with GWT apps</description>
@@ -26,6 +26,7 @@
 		<module>gwt-polymer-starter</module>
 		<module>gwt-polymer-starter-dagger-di</module>
 		<module>gwt-polymer-nav-list-detail</module>
+		<module>progressive-web-app</module>
 	</modules>
 	<organization>
 		<name>G-Widgets</name>
