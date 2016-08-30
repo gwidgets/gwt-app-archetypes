@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><archetype-descriptor name="GWT Progressive Web App Archetype">
+  <requiredProperties>
+    <requiredProperty key="module" />
+  </requiredProperties>
+  <fileSets>
+    <fileSet filtered="true" packaged="true" encoding="UTF-8">
+      <directory>src/main/java</directory>
+      <includes>
+        <include>**/*.java</include>
+        <include>**/*.xml</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" packaged="true" encoding="UTF-8">
+      <directory>src/main/resources</directory>
+      <includes>
+        <include>**/*.xml</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>src/main/webapp</directory>
+      <includes>
+        <include>**/*.xml</include>
+        <include>**/*.js</include>
+        <include>**/*.json</include>
+        <include>**/*.html</include>
+        <include>**/*.css</include>
+      </includes>
+    </fileSet>
+     <fileSet>
+      <directory>src/main/webapp</directory>
+      <includes>
+        <include>resources/gwt.png</include>
+        <include>resources/image-splash.png</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+</archetype-descriptor>

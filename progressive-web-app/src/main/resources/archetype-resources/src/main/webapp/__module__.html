@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link type="text/css" rel="stylesheet" href="styles/styles.css">
+     
+    <title>Pwa Template</title>
+
+	  <script src="${module}/bower_components/webcomponentsjs/webcomponents.js"></script>
+       <link rel="manifest" href="manifest.json">
+	 <link rel="import" href="polymer-imports.html"> 
+	 
+
+    <script type="text/javascript" language="javascript" src="${module}/${module}.nocache.js" async></script>
+    
+    <!-- in line css for quick rendering -->
+    	<style is="custom-style">
+
+	paper-card{
+		margin-bottom: 30px;
+	}
+  paper-card.rate { @apply(--layout-horizontal); }
+  .rate-image {
+    width: 160px;
+    height: 170px;
+   
+    background-size: cover;
+ 
+  }
+
+  .gwt{
+  	 background: url('./resources/gwt.png');
+  	    background-repeat: no-repeat;
+  }
+
+  .rate-content {
+    @apply(--layout-flex);
+    float: left;
+  }
+  .rate-header { @apply(--paper-font-headline); }
+  .rate-name { color: var(--paper-grey-600); margin: 10px 0; }
+  paper-icon-button.rate-icon {
+    --iron-icon-fill-color: white;
+    --iron-icon-stroke-color: var(--paper-grey-600);
+  }
+</style>
+  </head>
+
+  <body>
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+    
+    <paper-header-panel>
+     <paper-toolbar id="mainToolbar" justify="center" class="medium-tall">
+
+     <div class="top">
+		  <span class="appTitle">${module}</span>
+	  </div>
+     
+      <div class="navButtons bottom">
+		 <paper-button id="section1Button" class="selected">Section 1</paper-button>
+		 <paper-button id="section2Button" >Section 2</paper-button>
+		 <paper-button id="section3Button">Section 3</paper-button>
+	  </div>
+
+
+	</paper-toolbar> <!-- Main Content -->
+
+		
+		<div class="content">
+			<iron-pages attr-for-selected="data-route" selected="section1"
+				id="ironPages">
+			<section data-route="section1" class="section">
+				
+
+						<paper-card class="rate">
+						  <div class="rate-content">
+						    <div class="card-content">
+						      <div class="rate-header">PWA template for GWT </div>
+						      <div class="rate-name">This app is responsive</div>
+						    </div>
+						  </div>
+						  <div class="rate-image gwt"></div>
+						</paper-card>
+				
+
+				        <paper-card class="rate">
+						  <div class="rate-content">
+						    <div class="card-content">
+						      <div class="rate-header">This application makes use of Sevice Workers</div>
+						      <div class="rate-name">all the content is available offline</div>
+						    </div>
+						  </div>
+						  <div class="rate-image gwt"></div>
+						</paper-card>
+
+						<paper-card class="rate">
+						  <div class="rate-content">
+						    <div class="card-content">
+						      <div class="rate-header">This application has an app manifest</div>
+						      <div class="rate-name">it can be installed to home screen</div>
+						    </div>
+						  </div>
+						  <div class="rate-image gwt"></div>
+						</paper-card>
+				
+			</section>
+			<section data-route="section2" class="section">
+			<paper-card class="rate">
+						  <div class="rate-content">
+						    <div class="card-content">
+						      <div class="rate-header">Section 2 _ Title 1 </div>
+						      <div class="rate-name">Content goes here</div>
+						    </div>
+						  </div>
+						  <div class="rate-image gwt"></div>
+						</paper-card>
+				
+
+				<paper-card class="rate">
+						  <div class="rate-content">
+						    <div class="card-content">
+						      <div class="rate-header">Section 2 _ Title 2</div>
+						      <div class="rate-name">Content goes here</div>
+						    </div>
+						  </div>
+						  <div class="rate-image gwt"></div>
+						</paper-card>
+
+						<paper-card class="rate">
+						  <div class="rate-content">
+						    <div class="card-content">
+						      <div class="rate-header">Section 2 _ Title 3</div>
+						      <div class="rate-name">Content goes here</div>
+						    </div>
+						  </div>
+						  <div class="rate-image gwt"></div>
+						</paper-card>
+			</section>
+			<section data-route="section3" class="section">
+			   <paper-card class="rate">
+						  <div class="rate-content">
+						    <div class="card-content">
+						      <div class="rate-header">Section 3 _ Title 1 </div>
+						      <div class="rate-name">Content goes here</div>
+						    </div>
+						  </div>
+						  <div class="rate-image gwt"></div>
+						</paper-card>
+				
+
+				<paper-card class="rate">
+						  <div class="rate-content">
+						    <div class="card-content">
+						      <div class="rate-header">Section 3 _ Title 2</div>
+						      <div class="rate-name">Content goes here</div>
+						    </div>
+						  </div>
+						  <div class="rate-image gwt"></div>
+						</paper-card>
+
+						<paper-card class="rate">
+						  <div class="rate-content">
+						    <div class="card-content">
+						      <div class="rate-header">Section 3 _ Title 3</div>
+						      <div class="rate-name">Content goes here</div>
+						    </div>
+						  </div>
+						  <div class="rate-image gwt"></div>
+						</paper-card>
+			</section>
+			</iron-pages>
+		</div> 
+       </paper-header-panel>
+    
+  </body>
+</html>

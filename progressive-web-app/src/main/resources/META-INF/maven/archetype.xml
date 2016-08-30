@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype>
+	<id>progressive-web-app</id>
+	<sources>
+		<source>src\main\java\client\__module__.java</source>
+		<source>src\main\java\client\ClientFactory.java</source>
+		<source>src\main\java\client\ClientFactoryImpl.java</source>
+		<source>src\main\java\client\MyActivityMapper.java</source>
+		<source>src\main\java\client\MyHistoryMapper.java</source>
+		<source>src\main\java\places\ContactPlace.java</source>
+		<source>src\main\java\places\HomePlace.java</source>
+		<source>src\main\java\places\UsersPlace.java</source>
+		<source>src\main\java\activities\MainPageActivity.java</source>
+		<source>src\main\java\ui\AppElement.java</source>
+		<source>src\main\java\ui\SelectionManager.java</source>
+	</sources>
+	<resources>
+		<resource>src\main\resources\__module__.gwt.xml</resource>
+		<resource>src\main\webapp\__module__.html</resource>
+		<resource>src\main\webapp\sw.js</resource>
+		<resource>src\main\webapp\manifest.json</resource>
+		<resource>src\main\webapp\resources\gwt.png</resource>
+		<resource>src\main\webapp\resources\image-splash.png</resource>
+		<resource>src\main\webapp\WEB-INF\web.xml</resource>
+		<resource>src\main\webapp\styles\styles.css</resource>
+		<resource>src\main\webapp\polymer-imports.html</resource>
+	</resources>
+</archetype>
