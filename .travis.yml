@@ -1,3 +1,5 @@
 language: java
+
 after_success:
   - mvn -s autoDeploy/settings.xml deploy
+
