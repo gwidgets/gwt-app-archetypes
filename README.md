@@ -14,7 +14,7 @@ The available archetypes are:
   
   - gwt-polymer-nav-list-detail: This archetype defines a navigation layout with a main side paper menu and sub menus. The layout is responsive, so both the main menu and the sub menu adapt to screen size. This archetype is inspired from Polymer layouts: [http://polymerelements.github.io/app-layout-templates/index.html](http://polymerelements.github.io/app-layout-templates/index.html)
   
-  - progressive-web-app: This archetype defines a progressive web application structure with: an app shell for fast painting, service workers for offline usage, and a manifest file for installation to home screen. It uses some Polymer elements like [paper-toolbar](https://elements.polymer-project.org/elements/paper-toolbar), and [iron-pages](https://elements.polymer-project.org/elements/iron-pages). Because the names of the xxx.cache.js files are not known prior to compilation, they need to be added to the [sw.js](https://github.com/gwidgets/gwt-ui-archetypes/blob/master/progressive-web-app/src/main/resources/archetype-resources/src/main/webapp/sw.js) after compiling to allow full availability of the application onffline.    
+  - progressive-web-app: This archetype defines a progressive web application structure with: an app shell for fast painting, service workers for offline usage, and a manifest file for installation to home screen. It uses some Polymer elements like [paper-toolbar](https://elements.polymer-project.org/elements/paper-toolbar), and [iron-pages](https://elements.polymer-project.org/elements/iron-pages). Because the names of the xxx.cache.js files are not known prior to compilation, they need to be added to the [sw.js](https://github.com/gwidgets/gwt-ui-archetypes/blob/master/progressive-web-app/src/main/resources/archetype-resources/src/main/webapp/sw.js) after compiling to allow full availability of the application offline.    
 
 ##Usage
 
@@ -23,7 +23,7 @@ On Windows:
     mvn archetype:generate -DarchetypeGroupId=com.gwidgets.maven                ^
       -DarchetypeCatalog=https://oss.sonatype.org/content/repositories/snapshots/ ^
       -DarchetypeArtifactId={artifactName}          ^
-      -DarchetypeVersion=0.1-SNAPSHOT                ^
+      -DarchetypeVersion=0.2-SNAPSHOT                ^
       -DgroupId={yourGroupId}                               ^
       -DartifactId={yourArtifactID}                            ^
       -Dmodule={moduleName}                                  ^
@@ -34,7 +34,7 @@ On Linux/Mac Os:
         mvn archetype:generate -DarchetypeGroupId=com.gwidgets.maven                \
       -DarchetypeCatalog=https://oss.sonatype.org/content/repositories/snapshots/ \
       -DarchetypeArtifactId={artifactName}          \
-      -DarchetypeVersion=0.1-SNAPSHOT                \
+      -DarchetypeVersion=0.2-SNAPSHOT                \
       -DgroupId={yourGroupId}                                \
       -DartifactId={yourArtifactID}                             \
       -Dmodule={moduleName}                                   \
