@@ -10,6 +10,7 @@ import com.google.gwt.user.client.Event;
 import com.google.gwt.user.client.ui.Composite;
 import ${package}.places.*;
 import com.vaadin.polymer.Polymer;
+import com.google.gwt.user.client.ui.Widget;
 import com.vaadin.polymer.iron.IronPagesElement;
 import com.vaadin.polymer.paper.PaperDrawerPanelElement;
 import com.vaadin.polymer.paper.PaperMenuElement;
@@ -40,11 +41,11 @@ public class MainPage extends Composite {
 
 	private static MainPageUiBinder uiBinder = GWT.create(MainPageUiBinder.class);
 
-	interface MainPageUiBinder extends UiBinder<Element, MainPage> {
+	interface MainPageUiBinder extends UiBinder<Widget, MainPage> {
 	}
 
 	public MainPage() {
-		setElement(uiBinder.createAndBindUi(this));
+		initWidget(uiBinder.createAndBindUi(this));
 		mainDrawer.setForceNarrow(true);
 	}
 

@@ -6,7 +6,7 @@
 	<version>0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>gwt-archetypes</name>
-	<description>A set of maven archetypes for getting started with GWT apps</description>
+	<description>A set of maven archetypes for scaffolding GWT apps</description>
 
 	<licenses>
 		<license>

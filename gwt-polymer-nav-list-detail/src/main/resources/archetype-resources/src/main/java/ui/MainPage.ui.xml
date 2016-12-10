@@ -5,7 +5,7 @@
 	<ui:style>
 	
 	</ui:style>
-	<div>
+	<g:HTMLPanel>
 		<paper-drawer-panel ui:field="mainDrawer">
 			<paper-header-panel drawer="">
 				<!-- Drawer Toolbar -->
@@ -122,6 +122,6 @@
 		</paper-drawer-panel>
 
 
-	</div>
+	</g:HTMLPanel>
 
 </ui:UiBinder>
