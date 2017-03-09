@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>${groupId}</groupId>
+  <artifactId>${artifactId}</artifactId>
+  <version>${version}</version>
+  <packaging>pom</packaging>
+
+  <prerequisites>
+    <maven>${mavenVersion}</maven>
+  </prerequisites>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <mavenVersion>3.0</mavenVersion>
+    <serverPort>8084</serverPort>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>net.ltgt.gwt.maven</groupId>
+        <artifactId>gwt-maven-plugin</artifactId>
+        <inherited>false</inherited>
+        <configuration>
+          <launcherDir>${project.build.directory}/gwt/launcherDir</launcherDir>
+        </configuration>
+      </plugin>
+       <plugin>
+          <groupId>org.eclipse.jetty</groupId>
+          <artifactId>jetty-maven-plugin</artifactId>
+          <version>9.3.14.v20161028</version>
+          <configuration>
+            <skip>true</skip>
+          </configuration>
+        </plugin>
+    </plugins>
+  </build>
+  <modules>
+    <module>${rootArtifactId}-server</module>
+    <module>${rootArtifactId}-client</module>
+  </modules>
+</project>

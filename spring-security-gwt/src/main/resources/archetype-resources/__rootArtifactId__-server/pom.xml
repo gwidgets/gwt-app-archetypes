@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>${groupId}</groupId>
+    <artifactId>${rootArtifactId}</artifactId>
+    <version>${version}</version>
+  </parent>
+
+	 <artifactId>${artifactId}</artifactId>
+	<packaging>war</packaging>
+
+	<prerequisites>
+		<maven>${mavenVersion}</maven>
+	</prerequisites>
+
+	<dependencies>
+		 <dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>4.3.4.RELEASE</version>
+		</dependency> 
+		 <dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>4.2.0.RELEASE</version>
+		</dependency> 
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>4.2.0.RELEASE</version>
+		</dependency>
+        <dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+       <plugins>
+        <plugin>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-maven-plugin</artifactId>
+			<version>9.3.14.v20161028</version>
+			<configuration>
+			<webAppSourceDirectory>${project.build.directory}/${project.build.finalName}</webAppSourceDirectory>
+			<waitForChild>true</waitForChild>
+			<skip>false</skip>
+		    <httpConnector>
+		      <port>${serverPort}</port>
+		    </httpConnector>
+			</configuration>
+		</plugin> 
+       
+       </plugins>
+	</build>
+
+
+</project>

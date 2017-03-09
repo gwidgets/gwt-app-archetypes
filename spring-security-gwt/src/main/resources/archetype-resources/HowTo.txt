@@ -1,0 +1,8 @@
+To run the app in dev mode, you need to launch the server module first using: mvn package jetty:run
+and then run the client module: mvn package gwt:devmode
+
+======================
+
+To package the app for deploying in a server ( production), you need to compile the client module: mvn gwt:compile
+
+and then package the server module: mvn package
