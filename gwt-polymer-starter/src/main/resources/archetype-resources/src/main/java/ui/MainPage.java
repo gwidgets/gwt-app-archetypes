@@ -41,6 +41,7 @@ public class MainPage extends Composite {
 	interface MainPageUiBinder extends UiBinder<Widget, MainPage> {
 	}
 
+	//main page constructor
 	public MainPage() {
 		initWidget(uiBinder.createAndBindUi(this));
 
