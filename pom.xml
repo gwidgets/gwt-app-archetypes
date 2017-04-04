@@ -42,6 +42,7 @@
 	<profiles>
 		<profile>
 			<id>release</id>
+			
 		</profile>
 	</profiles>
 
