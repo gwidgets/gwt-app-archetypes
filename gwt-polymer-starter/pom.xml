@@ -34,7 +34,6 @@
       </plugins>
     </pluginManagement>
   </build>
-  <version>0.2-SNAPSHOT</version>
   <groupId>com.gwidgets.maven</groupId>
   <name>gwt-polymer-starter</name>
 </project>

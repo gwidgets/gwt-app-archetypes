@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype>
+	<id>spring-boot-gwt</id>
+	<sources>
+		<source>src\main\java\gwt\GwtAppEntryPoint.java</source>
+		<source>src\main\java\client\Boot__module__Application.java</source>
+		<source>src\test\java\Boot__module__ApplicationTests.java</source>
+	</sources>
+	<resources>
+		<resource>src\main\module.gwt.xml</resource>
+		<resource>src\main\resources\static\__module__.html</resource>
+		<resource>src\main\resources\templates</resource>
+		<resource>src\main\resources\application.properties</resource>
+		<resource>mvnw</resource>
+		<resource>mvnw.cmd</resource>
+	</resources>
+</archetype>

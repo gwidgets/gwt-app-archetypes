@@ -4,7 +4,7 @@
 This project provides a set of archetypes for starting your GWT application. 
 
 
-##Available archetypes
+## Available archetypes
 
 The available archetypes are:
 
@@ -16,16 +16,18 @@ The available archetypes are:
   
   - progressive-web-app: This archetype defines a progressive web application structure with: an app shell for fast painting, service workers for offline usage, and a manifest file for installation to home screen. It uses some Polymer elements like [paper-toolbar](https://elements.polymer-project.org/elements/paper-toolbar), and [iron-pages](https://elements.polymer-project.org/elements/iron-pages). Because the names of the xxx.cache.js files are not known prior to compilation, they need to be added to the [sw.js](https://github.com/gwidgets/gwt-ui-archetypes/blob/master/progressive-web-app/src/main/resources/archetype-resources/src/main/webapp/sw.js) after compiling to allow full availability of the application offline.  
   
-  - spring-security-gwt: This archetype is based on the example provided in our blog post on how to [secure a GWT application using Spring Security](http://www.g-widgets.com/2016/12/09/securing-a-gwt-app-using-spring-security/). It is a multi module application with a client module, which the GWT application, and a server module which provides authorization and authentication for accessing the application. The project makes use of the Jetty maven plugin as well as the new [GWT maven plugin](https://tbroyer.github.io/gwt-maven-plugin/).    
+  - spring-security-gwt: This archetype is based on the example provided in our blog post on how to [secure a GWT application using Spring Security](http://www.g-widgets.com/2016/12/09/securing-a-gwt-app-using-spring-security/). It is a multi module application with a client module, which the GWT application, and a server module which provides authorization and authentication for accessing the application. The project makes use of the Jetty maven plugin as well as the new [GWT maven plugin](https://tbroyer.github.io/gwt-maven-plugin/).  
+  
+  - spring-boot-gwt: This archetype is an integration of GWT into a spring boot application. There are two predefined profiles for running GWT dev mode and for running the application in production. To run the spring boot app with GWT in devmode you need to run the following commands: `mvn spring-boot:run` and in a different window `mvn gwt:devmode -Pgwt-dev`. If you don't need to you use GWT devmode and you need to run or package the application you can use the gwt-prod profile. For example: `mvn package -Pgwt:prod`. Spring Boot version: 1.5.2.RELEASE, GWT version: 2.8.0. This archetypes uses the net.ltgt.gwt.maven GWT plugin.      
 
-##Usage
+## Usage
 
 On Windows:
 
     mvn archetype:generate -DarchetypeGroupId=com.gwidgets.maven                ^
       -DarchetypeCatalog=https://oss.sonatype.org/content/repositories/snapshots/ ^
       -DarchetypeArtifactId={artifactName}          ^
-      -DarchetypeVersion=0.2-SNAPSHOT                ^
+      -DarchetypeVersion=0.3-SNAPSHOT                ^
       -DgroupId={yourGroupId}                               ^
       -DartifactId={yourArtifactID}                            ^
       -Dmodule={moduleName}                                  ^
@@ -36,14 +38,14 @@ On Linux/Mac Os:
         mvn archetype:generate -DarchetypeGroupId=com.gwidgets.maven                \
       -DarchetypeCatalog=https://oss.sonatype.org/content/repositories/snapshots/ \
       -DarchetypeArtifactId={artifactName}          \
-      -DarchetypeVersion=0.2-SNAPSHOT                \
+      -DarchetypeVersion=0.3-SNAPSHOT                \
       -DgroupId={yourGroupId}                                \
       -DartifactId={yourArtifactID}                             \
       -Dmodule={moduleName}                                   \
       -Dversion={yourVersion}
 
 
-##Demos:
+## Demos:
 
 - gwt-polymer-starter: [https://gwt-polymer-starter.herokuapp.com/](https://gwt-polymer-starter.herokuapp.com/)
 - gwt-polymer-nav-list-detail: [https://gwt-polymer-nav-list.herokuapp.com](https://gwt-polymer-nav-list.herokuapp.com)
