@@ -3,7 +3,7 @@
   <parent>
     <groupId>com.gwidgets.maven</groupId>
     <artifactId>gwt-archetypes</artifactId>
-    <version>0.2-SNAPSHOT</version>
+    <version>0.3-SNAPSHOT</version>
   </parent>
   
   <artifactId>gwt-polymer-starter-dagger-di</artifactId>
