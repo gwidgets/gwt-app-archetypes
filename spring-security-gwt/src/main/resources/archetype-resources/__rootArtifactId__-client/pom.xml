@@ -13,7 +13,7 @@
   <packaging>gwt-app</packaging>
 
   <properties>
-    <gwtVersion>2.8.0</gwtVersion>
+    <gwtVersion>2.8.2</gwtVersion>
      <gwtPolymerVersion>1.7.0.0</gwtPolymerVersion>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>

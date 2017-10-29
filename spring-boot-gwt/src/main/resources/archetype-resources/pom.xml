@@ -22,7 +22,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<gwtVersion>2.8.0</gwtVersion>
+		<gwtVersion>2.8.2</gwtVersion>
 		<serverPort>8080</serverPort>
 	</properties>
 
