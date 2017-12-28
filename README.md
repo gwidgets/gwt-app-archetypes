@@ -48,7 +48,6 @@ On Linux/Mac Os:
 ## Demos:
 
 - gwt-polymer-starter: [https://gwt-polymer-starter.herokuapp.com/](https://gwt-polymer-starter.herokuapp.com/)
-- gwt-polymer-nav-list-detail: [https://gwt-polymer-nav-list.herokuapp.com](https://gwt-polymer-nav-list.herokuapp.com)
 - progressive-web-app: [https://pwa-template.herokuapp.com/](https://pwa-template.herokuapp.com/)
 - spring-security-gwt: [https://gwt-spring-security.herokuapp.com/GwtSpringSecurity.html](https://gwt-spring-security.herokuapp.com/GwtSpringSecurity.html)
   * username: gwidgets, password: gwidgets
