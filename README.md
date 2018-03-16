@@ -1,4 +1,7 @@
 [![Build Status](https://travis-ci.org/gwidgets/gwt-ui-archetypes.svg?branch=master)](https://travis-ci.org/gwidgets/gwt-ui-archetypes)
+
+# This project is not maintained anymore as it depends mostly on [gwt-polymer-elemts](https://github.com/manolo/gwt-polymer-elements), which is no longer support by Vaadin. 
+
 ## Description
 
 This project provides a set of archetypes for starting your GWT application. 
