@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype>
+	<id>gwt-polymer-starter</id>
+	<sources>
+		<source>src\main\java\client\__module__.java</source>
+	</sources>
+	<resources>
+		<resource>src\main\module.gwt.xml</resource>
+	</resources>
+</archetype>

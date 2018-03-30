@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.gwidgets.maven</groupId>
 	<artifactId>gwt-archetypes</artifactId>
-	<version>0.3-SNAPSHOT</version>
+	<version>0.4-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>gwt-archetypes</name>
 	<description>A set of maven archetypes for scaffolding GWT apps</description>
@@ -23,12 +23,10 @@
 	</developers>
 
 	<modules>
-		<module>gwt-polymer-starter</module>
-		<module>gwt-polymer-starter-dagger-di</module>
-		<module>gwt-polymer-nav-list-detail</module>
-		<module>progressive-web-app</module>
         <module>spring-security-gwt</module>
         <module>spring-boot-gwt</module>
+		<module>gwt-simple-mojo-plugin</module>
+		<module>gwt-simple</module>
   </modules>
 	<organization>
 		<name>G-Widgets</name>
@@ -43,7 +41,6 @@
 	<profiles>
 		<profile>
 			<id>release</id>
-			
 		</profile>
 	</profiles>
 
