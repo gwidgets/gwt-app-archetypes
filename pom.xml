@@ -23,7 +23,6 @@
 	</developers>
 
 	<modules>
-        <module>spring-security-gwt</module>
         <module>spring-boot-gwt</module>
 		<module>gwt-simple-mojo-plugin</module>
 		<module>gwt-simple</module>
