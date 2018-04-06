@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/gwidgets/gwt-ui-archetypes.svg?branch=master)](https://travis-ci.org/gwidgets/gwt-ui-archetypes)
+[![Build Status](https://travis-ci.org/gwidgets/gwt-app-archetypes.svg?branch=master)](https://travis-ci.org/gwidgets/gwt-app-archetypes)
 
 ## Description
 
