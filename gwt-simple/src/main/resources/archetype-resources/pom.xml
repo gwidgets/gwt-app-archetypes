@@ -53,6 +53,13 @@
           <compilerArgs>
             <arg>-generateJsInteropExports</arg>
           </compilerArgs>
+          <useCompilerArgsForTests>true</useCompilerArgsForTests>
+          <codeserverArgs>
+            <arg>-generateJsInteropExports</arg>
+          </codeserverArgs>
+          <devmodeArgs>
+            <arg>-generateJsInteropExports</arg>
+          </devmodeArgs>
         </configuration>
       </plugin>
       <plugin>
