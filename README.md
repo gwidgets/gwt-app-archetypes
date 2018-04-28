@@ -17,7 +17,7 @@ On Windows:
 
     mvn archetype:generate -DarchetypeGroupId=com.gwidgets.maven                ^
       -DarchetypeArtifactId={artifactName}          ^
-      -DarchetypeVersion=0.4-SNAPSHOT                ^
+      -DarchetypeVersion=0.4                ^
       -DgroupId={yourGroupId}                               ^
       -DartifactId={yourArtifactID}                            ^
       -Dmodule={moduleName}                                  ^
@@ -27,7 +27,7 @@ On Linux/Mac Os:
 
     mvn archetype:generate -DarchetypeGroupId=com.gwidgets.maven                \
       -DarchetypeArtifactId={artifactName}          \
-      -DarchetypeVersion=0.4-SNAPSHOT                \
+      -DarchetypeVersion=0.4                \
       -DgroupId={yourGroupId}                                \
       -DartifactId={yourArtifactID}                             \
       -Dmodule={moduleName}                                   \

@@ -5,10 +5,11 @@
   <parent>
     <groupId>com.gwidgets.maven</groupId>
     <artifactId>gwt-archetypes</artifactId>
-    <version>0.3-SNAPSHOT</version>
+    <version>0.4</version>
   </parent>
   <groupId>com.gwidgets.maven</groupId>
   <artifactId>spring-boot-gwt</artifactId>
   <name>spring-boot-gwt</name>
   <description>A maven archetype that integrates GWT into a Spring Boot Application</description>
+
 </project>
